@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Products</title>
+    <style>
+        body {
+            background-image: url(new.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.4);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            color: #181818;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        h2 {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .products {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .product-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .b1 {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .p4{
+            width: 200%;
+        }
+    </style>
+</head>
+<body>
+    <button class="b1"><a href="index.html">Log Out</a></button>
+    <main>
+        <h1>Welcome!!</h1>
+        <section class="products">
+            <h2><strong><em><u>Featured Products</u></em></strong></h2>
+            <div class="product-card">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img src="stationary.jpg" alt="Stationary Items">
+                    <h3>Stationary items</h3>
+                    <button><a href="stationary.html">Shop Now</a></button>
+                </div>
+                <!-- Product 2 -->
+                <div class="product"><div class="p4">
+                    <img src="cosmetics.jpeg" alt="Cosmetics">
+                    <h3>Cosmetics</h3>
+                    <button>Shop Now</button>
+                </div></div>
+                <div class="product">
+                    <img src="grocery.jpg" alt="Stationary Items">
+                    <h3>Stationary items</h3>
+                    <button><a href="stationary.html">Shop Now</a></button>
+                </div>
+                <!-- Product 2 -->
+                <div class="product"><div class="p4">
+                    <img src="Retail merchandising.jpeg" alt="Cosmetics">
+                    <h3>Cosmetics</h3>
+                    <button>Shop Now</button>
+                </div></div>
+                <!-- Add more products similarly -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>

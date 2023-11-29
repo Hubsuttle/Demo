@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Stationary Items</title>
+    <style>
+        /* Your existing CSS styles here */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+            
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Stationary Items</h1>
+    </header>
+
+    <section class="main-content">
+        <!-- Your existing product articles here -->
+
+        <article class="product">
+            <img src="pens.jpeg" alt="Pen">
+            <h2>Ballpoint Pen</h2>
+            <p>A smooth-writing ballpoint pen for your everyday needs.</p>
+            <p class="price">Rs 9.99</p>
+            <button class="addToCart" onclick="addToCart('Ballpoint Pen', 'Rs 9.99')">Add to Cart</button>
+        </article>
+        
+        <!-- Add more product articles as needed -->
+    </section>
+
+    <div id="cart">
+        <h2>Shopping Cart</h2>
+        <table id="cartTable">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Cart items will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <!-- Your existing footer content here -->
+    </footer>
+
+    <script>
+        // JavaScript code for adding to cart
+        function addToCart(productName, price) {
+            // You can customize this part to store the product details in a cart object or send it to a server
+            console.log(`Added to Cart: ${productName} - ${price}`);
+            alert('Item added to cart!');
+
+            // Call a function to update the cart table
+            updateCartTable(productName, price);
+        }
+
+        // JavaScript code for updating the cart table
+        function updateCartTable(productName, price) {
+            // Get the table body
+            var tableBody = document.querySelector("#cartTable tbody");
+
+            // Create a new row
+            var newRow = tableBody.insertRow();
+
+            // Insert cells into the row
+            var cellProduct = newRow.insertCell(0);
+            var cellPrice = newRow.insertCell(1);
+
+            // Set the cell content
+            cellProduct.textContent = productName;
+            cellPrice.textContent = price;
+        }
+    </script>
+</body>
+</html>
+

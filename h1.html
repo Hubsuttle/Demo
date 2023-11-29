@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(new.jpg);
+            
+            background-repeat: no-repeat;
+             background-size: cover; 
+            
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+           backdrop-filter: blur(5px);
+        }
+        h1{
+          font-size: 60px;
+          color: white;
+        }
+        h2{
+          
+          font-weight: bold;
+        }
+        .products {
+      
+      box-shadow: black;
+      color: #181818;
+      transform: translateY(-7px);
+
+      
+    }
+        .products {
+    margin-top: 20px;
+  }
+  
+  .product-card {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .product:hover{
+    transform: scale(1.04);
+    transition: 0.6s ease all;
+    animation-delay: 1s;
+    cursor: pointer;
+    box-shadow: 9px 8px 22px black;
+  }
+  .b1{
+    float: right;
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    
+  }
+  .product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+    </style>
+</head>
+<body>
+    <main>
+        <div class="intro">
+          <!-- Introductory content -->
+        </div>
+        <button class="b1"><a href="index.html">Log Out</a></button>
+      <h1>Welcome!!</h1>
+        <section class="products">
+          <h2><strong><em><u>Featured Products</u></em></strong></h2>
+          <div class="product-card">
+            <!-- Product 1 -->
+            <div class="product">
+              <img src="stationary.jpg" alt="Product 1">
+              <h3>Stationary items</h3>
+              
+              <button><a href="stationary.html">shop now</a></button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product">
+              <img src="cosmetics.jpeg" alt="Product 2">
+              <h3>Cosmetics</h3>
+        
+              <button>shop now</button>
+            </div>
+            <div class="product">
+                <img src="grocery.jpg" alt="Product 1">
+                <h3>Grocery</h3>
+                
+                <button>shop now</button>
+              </div>
+              <!-- Product 2 -->
+              <div class="product">
+                <img src="Retail merchandising.jpeg" alt="Product 2">
+                <h3>Clothing</h3>
+                
+                <button>shop now</button>
+              </div>
+            <!-- Add more products similarly -->
+          </div>
+        </section>
+      </main>
+</body>
+</html>
+
+

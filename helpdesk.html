@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Help Desk</title>
+    <!-- Add your stylesheets and scripts here -->
+    <link rel="stylesheet" href="helpdesk.css">
+</head>
+
+<body>
+    <header>
+        <h1>Your Website Help Desk</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" >
+        <h2>Welcome to our Help Desk</h2>
+        <p>
+            Need assistance? Check out our Knowledge Base or contact us for support.
+        </p>
+    </section>
+
+    <section id="knowledge-base">
+        <h2>Knowledge Base</h2>
+        <!-- Add your FAQ and tutorials here -->
+        <p>Common Questions:</p>
+        <ul>
+            <li>How do I reset my password?</li>
+            <li>What payment methods do you accept?</li>
+            <!-- Add more FAQs as needed -->
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+            Use the form below to submit a support ticket, and we'll get back to you as soon as possible.
+        </p>
+        <form method="post" action="helpdesk.php">
+            <!-- Add your form fields here, such as name, email, description, etc. -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="t1" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="t2" required>
+
+            <label for="issue">Describe Your Issue:</label>
+            <textarea id="issue" name="t3" rows="4" required></textarea>
+
+            <input type="submit" value="submit"></button>
+        </form>
+    </section>
+
+    <!-- <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer> -->
+</body>
+
+</html>

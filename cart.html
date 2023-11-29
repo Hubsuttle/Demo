@@ -1,0 +1,27 @@
+<script>
+function addToCart(productName, price) {
+    // You can customize this part to store the product details in a cart object or send it to a server
+    console.log(`Added to Cart: ${productName} - ${price}`);
+    alert('Item added to cart!');
+
+    // Call a function to update the cart table
+    updateCartTable(productName, price);
+}
+
+// JavaScript code for updating the cart table
+function updateCartTable(productName, price) {
+    // Get the table body
+    var tableBody = document.querySelector("#cartTable tbody");
+
+    // Create a new row
+    var newRow = tableBody.insertRow();
+
+    // Insert cells into the row
+    var cellProduct = newRow.insertCell(0);
+    var cellPrice = newRow.insertCell(1);
+
+    // Set the cell content
+    cellProduct.textContent = productName;
+    cellPrice.textContent = price;
+}
+</script>
